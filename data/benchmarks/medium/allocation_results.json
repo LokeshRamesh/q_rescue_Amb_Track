@@ -1,0 +1,705 @@
+{
+  "source": "benchmark_export",
+  "request": {
+    "benchmark_dir": "data/benchmarks/medium"
+  },
+  "scenario": {
+    "name": "Sheffield Flood Response (seed=42)",
+    "category": "flood",
+    "counts": {
+      "ambulances": 10,
+      "incidents": 20,
+      "hospitals": 4
+    },
+    "ambulances": [
+      {
+        "id": "A1",
+        "lat": 53.395914,
+        "lon": -1.544998,
+        "status": "Available"
+      },
+      {
+        "id": "A2",
+        "lat": 53.341254,
+        "lon": -1.505358,
+        "status": "Available"
+      },
+      {
+        "id": "A3",
+        "lat": 53.410471,
+        "lon": -1.41466,
+        "status": "Available"
+      },
+      {
+        "id": "A4",
+        "lat": 53.433827,
+        "lon": -1.532612,
+        "status": "Available"
+      },
+      {
+        "id": "A5",
+        "lat": 53.363288,
+        "lon": -1.544041,
+        "status": "Available"
+      },
+      {
+        "id": "A6",
+        "lat": 53.332796,
+        "lon": -1.448929,
+        "status": "Available"
+      },
+      {
+        "id": "A7",
+        "lat": 53.30398,
+        "lon": -1.510232,
+        "status": "Available"
+      },
+      {
+        "id": "A8",
+        "lat": 53.397483,
+        "lon": -1.441012,
+        "status": "Available"
+      },
+      {
+        "id": "A9",
+        "lat": 53.333066,
+        "lon": -1.432147,
+        "status": "Available"
+      },
+      {
+        "id": "A10",
+        "lat": 53.421415,
+        "lon": -1.5487,
+        "status": "Available"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "I1",
+        "lat": 53.404721,
+        "lon": -1.48195,
+        "severity_level": "MEDIUM",
+        "severity_weight": 50,
+        "category": "flood"
+      },
+      {
+        "id": "I2",
+        "lat": 53.367033,
+        "lon": -1.461185,
+        "severity_level": "HIGH",
+        "severity_weight": 75,
+        "category": "flood"
+      },
+      {
+        "id": "I3",
+        "lat": 53.390559,
+        "lon": -1.388574,
+        "severity_level": "CRITICAL",
+        "severity_weight": 100,
+        "category": "flood"
+      },
+      {
+        "id": "I4",
+        "lat": 53.396937,
+        "lon": -1.47147,
+        "severity_level": "HIGH",
+        "severity_weight": 75,
+        "category": "flood"
+      },
+      {
+        "id": "I5",
+        "lat": 53.396861,
+        "lon": -1.440317,
+        "severity_level": "HIGH",
+        "severity_weight": 75,
+        "category": "flood"
+      },
+      {
+        "id": "I6",
+        "lat": 53.394495,
+        "lon": -1.465924,
+        "severity_level": "MEDIUM",
+        "severity_weight": 50,
+        "category": "flood"
+      },
+      {
+        "id": "I7",
+        "lat": 53.428298,
+        "lon": -1.376703,
+        "severity_level": "HIGH",
+        "severity_weight": 75,
+        "category": "flood"
+      },
+      {
+        "id": "I8",
+        "lat": 53.412699,
+        "lon": -1.427755,
+        "severity_level": "HIGH",
+        "severity_weight": 75,
+        "category": "flood"
+      },
+      {
+        "id": "I9",
+        "lat": 53.355938,
+        "lon": -1.491796,
+        "severity_level": "LOW",
+        "severity_weight": 25,
+        "category": "flood"
+      },
+      {
+        "id": "I10",
+        "lat": 53.381722,
+        "lon": -1.471403,
+        "severity_level": "HIGH",
+        "severity_weight": 75,
+        "category": "flood"
+      },
+      {
+        "id": "I11",
+        "lat": 53.407603,
+        "lon": -1.429822,
+        "severity_level": "HIGH",
+        "severity_weight": 75,
+        "category": "flood"
+      },
+      {
+        "id": "I12",
+        "lat": 53.4164,
+        "lon": -1.50419,
+        "severity_level": "LOW",
+        "severity_weight": 25,
+        "category": "flood"
+      },
+      {
+        "id": "I13",
+        "lat": 53.360175,
+        "lon": -1.536762,
+        "severity_level": "HIGH",
+        "severity_weight": 75,
+        "category": "flood"
+      },
+      {
+        "id": "I14",
+        "lat": 53.347202,
+        "lon": -1.418912,
+        "severity_level": "HIGH",
+        "severity_weight": 75,
+        "category": "flood"
+      },
+      {
+        "id": "I15",
+        "lat": 53.396428,
+        "lon": -1.521426,
+        "severity_level": "MEDIUM",
+        "severity_weight": 50,
+        "category": "flood"
+      },
+      {
+        "id": "I16",
+        "lat": 53.395551,
+        "lon": -1.426058,
+        "severity_level": "HIGH",
+        "severity_weight": 75,
+        "category": "flood"
+      },
+      {
+        "id": "I17",
+        "lat": 53.35991,
+        "lon": -1.506136,
+        "severity_level": "MEDIUM",
+        "severity_weight": 50,
+        "category": "flood"
+      },
+      {
+        "id": "I18",
+        "lat": 53.388948,
+        "lon": -1.498909,
+        "severity_level": "MEDIUM",
+        "severity_weight": 50,
+        "category": "flood"
+      },
+      {
+        "id": "I19",
+        "lat": 53.407127,
+        "lon": -1.417435,
+        "severity_level": "HIGH",
+        "severity_weight": 75,
+        "category": "flood"
+      },
+      {
+        "id": "I20",
+        "lat": 53.336486,
+        "lon": -1.477289,
+        "severity_level": "LOW",
+        "severity_weight": 25,
+        "category": "flood"
+      }
+    ],
+    "hospitals": [
+      {
+        "id": "H1",
+        "name": "Northern General Hospital",
+        "lat": 53.4096,
+        "lon": -1.4565,
+        "capacity": 1100,
+        "available_beds": 595
+      },
+      {
+        "id": "H2",
+        "name": "Royal Hallamshire Hospital",
+        "lat": 53.3782,
+        "lon": -1.4883,
+        "capacity": 900,
+        "available_beds": 475
+      },
+      {
+        "id": "H3",
+        "name": "Sheffield Children's Hospital",
+        "lat": 53.3728,
+        "lon": -1.4908,
+        "capacity": 200,
+        "available_beds": 105
+      },
+      {
+        "id": "H4",
+        "name": "Weston Park Hospital",
+        "lat": 53.3778,
+        "lon": -1.4943,
+        "capacity": 72,
+        "available_beds": 38
+      }
+    ]
+  },
+  "inputs": {
+    "distance_matrix": {
+      "A1": {
+        "I1": 4.293053,
+        "I2": 6.419909,
+        "I3": 10.389162,
+        "I4": 4.876433,
+        "I5": 6.941461,
+        "I6": 5.245353,
+        "I7": 11.721108,
+        "I8": 7.993072,
+        "I9": 5.675784,
+        "I10": 5.129207,
+        "I11": 7.745374,
+        "I12": 3.536406,
+        "I13": 4.011399,
+        "I14": 9.965311,
+        "I15": 1.563953,
+        "I16": 7.886265,
+        "I17": 4.761575,
+        "I18": 3.15273,
+        "I19": 8.548188,
+        "I20": 7.990578
+      },
+      "A2": {
+        "I1": 7.225982,
+        "I2": 4.10013,
+        "I3": 9.491991,
+        "I4": 6.587208,
+        "I5": 7.540054,
+        "I6": 6.472441,
+        "I7": 12.902783,
+        "I8": 9.466245,
+        "I9": 1.86442,
+        "I10": 5.032432,
+        "I11": 8.918438,
+        "I12": 8.356167,
+        "I13": 2.961592,
+        "I14": 5.776586,
+        "I15": 6.22693,
+        "I16": 8.008241,
+        "I17": 2.075059,
+        "I18": 5.320557,
+        "I19": 9.36323,
+        "I20": 1.937511
+      },
+      "A3": {
+        "I1": 4.505916,
+        "I2": 5.731381,
+        "I3": 2.809445,
+        "I4": 4.055535,
+        "I5": 2.2766,
+        "I6": 3.83472,
+        "I7": 3.202507,
+        "I8": 0.90256,
+        "I9": 7.933609,
+        "I10": 4.936892,
+        "I11": 1.054326,
+        "I12": 5.970247,
+        "I13": 9.841366,
+        "I14": 7.040843,
+        "I15": 7.247887,
+        "I16": 1.822988,
+        "I17": 8.27119,
+        "I18": 6.076604,
+        "I19": 0.414813,
+        "I20": 9.216344
+      },
+      "A4": {
+        "I1": 4.663226,
+        "I2": 8.808308,
+        "I3": 10.69039,
+        "I4": 5.765895,
+        "I5": 7.369536,
+        "I6": 6.217895,
+        "I7": 10.347059,
+        "I8": 7.334415,
+        "I9": 9.073897,
+        "I10": 7.073119,
+        "I11": 7.409301,
+        "I12": 2.702106,
+        "I13": 8.194374,
+        "I14": 12.232232,
+        "I15": 4.224163,
+        "I16": 8.245214,
+        "I17": 8.404551,
+        "I18": 5.467434,
+        "I19": 8.189379,
+        "I20": 11.428794
+      },
+      "A5": {
+        "I1": 6.179251,
+        "I2": 5.513303,
+        "I3": 10.749141,
+        "I4": 6.096642,
+        "I5": 7.827397,
+        "I6": 6.236093,
+        "I7": 13.242172,
+        "I8": 9.468647,
+        "I9": 3.562018,
+        "I10": 5.236642,
+        "I11": 9.036681,
+        "I12": 6.470021,
+        "I13": 0.594235,
+        "I14": 8.494837,
+        "I15": 3.97855,
+        "I16": 8.608773,
+        "I17": 2.543138,
+        "I18": 4.135677,
+        "I19": 9.708946,
+        "I20": 5.339729
+      },
+      "A6": {
+        "I1": 8.292353,
+        "I2": 3.892947,
+        "I3": 7.569291,
+        "I4": 7.287337,
+        "I5": 7.146616,
+        "I6": 6.952695,
+        "I7": 11.649874,
+        "I8": 8.995187,
+        "I9": 3.83659,
+        "I10": 5.641143,
+        "I11": 8.414274,
+        "I12": 9.993052,
+        "I13": 6.577405,
+        "I14": 2.556824,
+        "I15": 8.555866,
+        "I16": 7.141151,
+        "I17": 4.848777,
+        "I18": 7.070066,
+        "I19": 8.525265,
+        "I20": 1.927279
+      },
+      "A7": {
+        "I1": 11.358013,
+        "I2": 7.730534,
+        "I3": 12.56566,
+        "I4": 10.651715,
+        "I5": 11.322536,
+        "I6": 10.485655,
+        "I7": 16.418921,
+        "I8": 13.270295,
+        "I9": 5.90567,
+        "I10": 9.020681,
+        "I11": 12.698159,
+        "I12": 12.506917,
+        "I13": 6.492109,
+        "I14": 7.738214,
+        "I15": 10.306493,
+        "I16": 11.614306,
+        "I17": 6.225043,
+        "I18": 9.477855,
+        "I19": 13.018266,
+        "I20": 4.225174
+      },
+      "A8": {
+        "I1": 2.830844,
+        "I2": 3.640658,
+        "I3": 3.561154,
+        "I4": 2.020335,
+        "I5": 0.083085,
+        "I6": 1.684836,
+        "I7": 5.468715,
+        "I8": 1.906583,
+        "I9": 5.717412,
+        "I10": 2.670702,
+        "I11": 1.347873,
+        "I12": 4.686484,
+        "I13": 7.585959,
+        "I14": 5.780015,
+        "I15": 5.332891,
+        "I16": 1.01447,
+        "I17": 6.00954,
+        "I18": 3.954588,
+        "I19": 1.895518,
+        "I20": 7.196967
+      },
+      "A9": {
+        "I1": 8.625619,
+        "I2": 4.240306,
+        "I3": 7.016342,
+        "I4": 7.566243,
+        "I5": 7.114348,
+        "I6": 7.188862,
+        "I7": 11.209638,
+        "I8": 8.859556,
+        "I9": 4.706069,
+        "I10": 6.004888,
+        "I11": 8.289607,
+        "I12": 10.426139,
+        "I13": 7.570403,
+        "I14": 1.800722,
+        "I15": 9.204937,
+        "I16": 6.959712,
+        "I17": 5.747333,
+        "I18": 7.631395,
+        "I19": 8.292823,
+        "I20": 3.021421
+      },
+      "A10": {
+        "I1": 4.79765,
+        "I2": 8.380814,
+        "I3": 11.155142,
+        "I4": 5.797644,
+        "I5": 7.685303,
+        "I6": 6.250219,
+        "I7": 11.421922,
+        "I8": 8.073524,
+        "I9": 8.200546,
+        "I10": 6.763071,
+        "I11": 8.026898,
+        "I12": 3.001809,
+        "I13": 6.85542,
+        "I14": 11.92436,
+        "I15": 3.314791,
+        "I16": 8.622933,
+        "I17": 7.398538,
+        "I18": 4.8915,
+        "I19": 8.843489,
+        "I20": 10.564975
+      }
+    },
+    "severity_weights": {
+      "I1": 50,
+      "I2": 75,
+      "I3": 100,
+      "I4": 75,
+      "I5": 75,
+      "I6": 50,
+      "I7": 75,
+      "I8": 75,
+      "I9": 25,
+      "I10": 75,
+      "I11": 75,
+      "I12": 25,
+      "I13": 75,
+      "I14": 75,
+      "I15": 50,
+      "I16": 75,
+      "I17": 50,
+      "I18": 50,
+      "I19": 75,
+      "I20": 25
+    }
+  },
+  "optimization": {
+    "binary_variables": 200,
+    "settings": {
+      "distance_weight": 1.0,
+      "severity_weight": 8.0,
+      "constraint_penalty": 100.0,
+      "critical_priority": true,
+      "run_exact": null,
+      "run_qaoa": false,
+      "exact_variable_limit": 24,
+      "qaoa_variable_limit": 24,
+      "qaoa_reps": 1,
+      "qaoa_shots": 1024,
+      "qaoa_maxiter": 100,
+      "qaoa_attempts": 4,
+      "seed": 42
+    },
+    "gaps_from_exact": {
+      "classical_greedy": null,
+      "classical_optimal_flow": null,
+      "qaoa": null,
+      "classical_greedy_percent": null,
+      "classical_optimal_flow_percent": null,
+      "qaoa_percent": null
+    }
+  },
+  "solvers": {
+    "classical-greedy": {
+      "status": "ok",
+      "solver_name": "classical-greedy",
+      "qubo_energy": -3.3593780000010156,
+      "runtime_seconds": 2.9749993700534105e-05,
+      "feasible": true,
+      "metrics": {
+        "average_distance_km": 5.8640622,
+        "coverage_percent": 50.0,
+        "critical_coverage_percent": 100.0
+      },
+      "assignments": [
+        {
+          "ambulance_id": "A1",
+          "incident_id": "I4",
+          "distance_km": 4.876433,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A2",
+          "incident_id": "I10",
+          "distance_km": 5.032432,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A3",
+          "incident_id": "I3",
+          "distance_km": 2.809445,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A4",
+          "incident_id": "I7",
+          "distance_km": 10.347059,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A5",
+          "incident_id": "I13",
+          "distance_km": 0.594235,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A6",
+          "incident_id": "I11",
+          "distance_km": 8.414274,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A7",
+          "incident_id": "I14",
+          "distance_km": 7.738214,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A8",
+          "incident_id": "I2",
+          "distance_km": 3.640658,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A9",
+          "incident_id": "I5",
+          "distance_km": 7.114348,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A10",
+          "incident_id": "I8",
+          "distance_km": 8.073524,
+          "hospital_id": null
+        }
+      ]
+    },
+    "classical-optimal-flow": {
+      "status": "ok",
+      "solver_name": "classical-optimal-flow",
+      "qubo_energy": -24.494510000000446,
+      "runtime_seconds": 0.00132658303482458,
+      "feasible": true,
+      "metrics": {
+        "average_distance_km": 2.750549,
+        "coverage_percent": 50.0,
+        "critical_coverage_percent": 100.0
+      },
+      "assignments": [
+        {
+          "ambulance_id": "A1",
+          "incident_id": "I15",
+          "distance_km": 1.563953,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A2",
+          "incident_id": "I17",
+          "distance_km": 2.075059,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A3",
+          "incident_id": "I3",
+          "distance_km": 2.809445,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A4",
+          "incident_id": "I1",
+          "distance_km": 4.663226,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A5",
+          "incident_id": "I13",
+          "distance_km": 0.594235,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A6",
+          "incident_id": "I2",
+          "distance_km": 3.892947,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A7",
+          "incident_id": "I20",
+          "distance_km": 4.225174,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A8",
+          "incident_id": "I5",
+          "distance_km": 0.083085,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A9",
+          "incident_id": "I14",
+          "distance_km": 1.800722,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A10",
+          "incident_id": "I4",
+          "distance_km": 5.797644,
+          "hospital_id": null
+        }
+      ]
+    },
+    "exact-enumeration": {
+      "status": "skipped",
+      "solver_name": "exact-enumeration",
+      "reason": "exact enumeration skipped because 200 binary variables exceed the configured limit of 24"
+    },
+    "qiskit-qaoa": {
+      "status": "skipped",
+      "solver_name": "qiskit-qaoa",
+      "reason": "QAOA disabled for this run"
+    }
+  }
+}

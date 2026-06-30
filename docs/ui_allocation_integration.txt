@@ -1,0 +1,122 @@
+UI Allocation Integration Notes
+===============================
+
+Use this function to call Sanjana's allocation algorithm from the UI/backend:
+
+from q_rescue.services.allocation_output import build_allocation_output_from_request
+
+allocation_result = build_allocation_output_from_request(request)
+
+The allocation_result returned by this function is already JSON-ready. It can be
+returned directly from an API endpoint or passed to the UI rendering layer.
+
+
+Input Request
+-------------
+
+Example input:
+
+request = {
+    "scenario": {
+        "category": "flood",
+        "ambulances": 10,
+        "incidents": 20,
+        "seed": 42
+    },
+    "optimisation": {
+        "critical_priority": True,
+        "run_exact": False,
+        "run_qaoa": False
+    }
+}
+
+Supported scenario categories:
+
+- generic
+- flood
+- industrial_accident
+- city_wide_emergency
+
+
+Output Result
+-------------
+
+Main output shape:
+
+allocation_result = {
+    "scenario": {...},
+    "inputs": {
+        "distance_matrix": {...},
+        "severity_weights": {...}
+    },
+    "optimization": {
+        "binary_variables": 200,
+        "settings": {...},
+        "gaps_from_exact": {...}
+    },
+    "solvers": {
+        "classical-greedy": {...},
+        "classical-optimal-flow": {...},
+        "exact-enumeration": {...},
+        "qiskit-qaoa": {...}
+    }
+}
+
+
+For Allocation Table Or Map
+---------------------------
+
+Recommended final allocation result:
+
+allocation_result["solvers"]["classical-optimal-flow"]["assignments"]
+
+Each assignment looks like:
+
+{
+    "ambulance_id": "A1",
+    "incident_id": "I4",
+    "distance_km": 4.52,
+    "hospital_id": None
+}
+
+
+For Comparison Cards Or Charts
+------------------------------
+
+Use:
+
+allocation_result["solvers"][solver_name]["metrics"]
+
+Example:
+
+{
+    "average_distance_km": 2.75,
+    "coverage_percent": 50.0,
+    "critical_coverage_percent": 100.0
+}
+
+Recommended UI behavior:
+
+- Show classical-optimal-flow as the main final allocation.
+- Use other solvers for comparison when their status is "ok".
+- If a solver has status "skipped", hide it or show the reason.
+
+Example skipped solver:
+
+{
+    "status": "skipped",
+    "reason": "exact enumeration skipped because 200 binary variables exceed the configured limit of 24"
+}
+
+
+CLI Testing Option
+------------------
+
+For testing without the UI:
+
+.venv/bin/python scripts/generate_allocation_outputs.py \
+  --request-json data/outputs/ui_request.json \
+  --output data/outputs/allocation_results.json
+
+The UI/backend should call the Python function directly. The CLI is mainly for
+testing and demo generation.

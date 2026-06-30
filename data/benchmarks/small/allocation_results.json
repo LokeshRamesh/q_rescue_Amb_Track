@@ -1,0 +1,272 @@
+{
+  "source": "benchmark_export",
+  "request": {
+    "benchmark_dir": "data/benchmarks/small"
+  },
+  "scenario": {
+    "name": "Sheffield Flood Response (seed=42)",
+    "category": "flood",
+    "counts": {
+      "ambulances": 3,
+      "incidents": 5,
+      "hospitals": 4
+    },
+    "ambulances": [
+      {
+        "id": "A1",
+        "lat": 53.395914,
+        "lon": -1.544998,
+        "status": "Available"
+      },
+      {
+        "id": "A2",
+        "lat": 53.341254,
+        "lon": -1.505358,
+        "status": "Available"
+      },
+      {
+        "id": "A3",
+        "lat": 53.410471,
+        "lon": -1.41466,
+        "status": "Available"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "I1",
+        "lat": 53.313041,
+        "lon": -1.465616,
+        "severity_level": "LOW",
+        "severity_weight": 25,
+        "category": "flood"
+      },
+      {
+        "id": "I2",
+        "lat": 53.386218,
+        "lon": -1.469118,
+        "severity_level": "MEDIUM",
+        "severity_weight": 50,
+        "category": "flood"
+      },
+      {
+        "id": "I3",
+        "lat": 53.405199,
+        "lon": -1.466096,
+        "severity_level": "HIGH",
+        "severity_weight": 75,
+        "category": "flood"
+      },
+      {
+        "id": "I4",
+        "lat": 53.388593,
+        "lon": -1.477871,
+        "severity_level": "HIGH",
+        "severity_weight": 75,
+        "category": "flood"
+      },
+      {
+        "id": "I5",
+        "lat": 53.391598,
+        "lon": -1.444027,
+        "severity_level": "MEDIUM",
+        "severity_weight": 50,
+        "category": "flood"
+      }
+    ],
+    "hospitals": [
+      {
+        "id": "H1",
+        "name": "Northern General Hospital",
+        "lat": 53.4096,
+        "lon": -1.4565,
+        "capacity": 1100,
+        "available_beds": 595
+      },
+      {
+        "id": "H2",
+        "name": "Royal Hallamshire Hospital",
+        "lat": 53.3782,
+        "lon": -1.4883,
+        "capacity": 900,
+        "available_beds": 475
+      },
+      {
+        "id": "H3",
+        "name": "Sheffield Children's Hospital",
+        "lat": 53.3728,
+        "lon": -1.4908,
+        "capacity": 200,
+        "available_beds": 105
+      },
+      {
+        "id": "H4",
+        "name": "Weston Park Hospital",
+        "lat": 53.3778,
+        "lon": -1.4943,
+        "capacity": 72,
+        "available_beds": 38
+      }
+    ]
+  },
+  "inputs": {
+    "distance_matrix": {
+      "A1": {
+        "I1": 10.614809,
+        "I2": 5.145924,
+        "I3": 5.331809,
+        "I4": 4.52498,
+        "I5": 6.712221
+      },
+      "A2": {
+        "I1": 4.099756,
+        "I2": 5.547925,
+        "I3": 7.572321,
+        "I4": 5.570828,
+        "I5": 6.920708
+      },
+      "A3": {
+        "I1": 11.349096,
+        "I2": 4.5065,
+        "I3": 3.459459,
+        "I4": 4.845631,
+        "I5": 2.862561
+      }
+    },
+    "severity_weights": {
+      "I1": 25,
+      "I2": 50,
+      "I3": 75,
+      "I4": 75,
+      "I5": 50
+    }
+  },
+  "optimization": {
+    "binary_variables": 15,
+    "settings": {
+      "distance_weight": 1.0,
+      "severity_weight": 8.0,
+      "constraint_penalty": 100.0,
+      "critical_priority": true,
+      "run_exact": null,
+      "run_qaoa": false,
+      "exact_variable_limit": 24,
+      "qaoa_variable_limit": 24,
+      "qaoa_reps": 1,
+      "qaoa_shots": 1024,
+      "qaoa_maxiter": 100,
+      "qaoa_attempts": 4,
+      "seed": 42
+    },
+    "gaps_from_exact": {
+      "classical_greedy": 0.0,
+      "classical_optimal_flow": 0.0,
+      "qaoa": null,
+      "classical_greedy_percent": 0.0,
+      "classical_optimal_flow_percent": 0.0,
+      "qaoa_percent": null
+    }
+  },
+  "solvers": {
+    "classical-greedy": {
+      "status": "ok",
+      "solver_name": "classical-greedy",
+      "qubo_energy": -2.4676359999998567,
+      "runtime_seconds": 1.4042016118764877e-05,
+      "feasible": true,
+      "metrics": {
+        "average_distance_km": 4.510788000000001,
+        "coverage_percent": 60.0,
+        "critical_coverage_percent": 100.0
+      },
+      "assignments": [
+        {
+          "ambulance_id": "A1",
+          "incident_id": "I4",
+          "distance_km": 4.52498,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A2",
+          "incident_id": "I2",
+          "distance_km": 5.547925,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A3",
+          "incident_id": "I3",
+          "distance_km": 3.459459,
+          "hospital_id": null
+        }
+      ]
+    },
+    "classical-optimal-flow": {
+      "status": "ok",
+      "solver_name": "classical-optimal-flow",
+      "qubo_energy": -2.4676359999998567,
+      "runtime_seconds": 8.083297871053219e-05,
+      "feasible": true,
+      "metrics": {
+        "average_distance_km": 4.510788000000001,
+        "coverage_percent": 60.0,
+        "critical_coverage_percent": 100.0
+      },
+      "assignments": [
+        {
+          "ambulance_id": "A1",
+          "incident_id": "I4",
+          "distance_km": 4.52498,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A2",
+          "incident_id": "I2",
+          "distance_km": 5.547925,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A3",
+          "incident_id": "I3",
+          "distance_km": 3.459459,
+          "hospital_id": null
+        }
+      ]
+    },
+    "exact-enumeration": {
+      "status": "ok",
+      "solver_name": "exact-enumeration",
+      "qubo_energy": -2.4676359999998567,
+      "runtime_seconds": 0.4414618330192752,
+      "feasible": true,
+      "metrics": {
+        "average_distance_km": 4.510788000000001,
+        "coverage_percent": 60.0,
+        "critical_coverage_percent": 100.0
+      },
+      "assignments": [
+        {
+          "ambulance_id": "A1",
+          "incident_id": "I4",
+          "distance_km": 4.52498,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A2",
+          "incident_id": "I2",
+          "distance_km": 5.547925,
+          "hospital_id": null
+        },
+        {
+          "ambulance_id": "A3",
+          "incident_id": "I3",
+          "distance_km": 3.459459,
+          "hospital_id": null
+        }
+      ]
+    },
+    "qiskit-qaoa": {
+      "status": "skipped",
+      "solver_name": "qiskit-qaoa",
+      "reason": "QAOA disabled for this run"
+    }
+  }
+}
