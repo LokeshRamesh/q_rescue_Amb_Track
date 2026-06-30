@@ -1,0 +1,6 @@
+location,disaster_type,severity,affected_population,ambulances,rescue_teams,food_units
+Sheffield City Centre,City-wide emergency,4,52000,24,18,120
+Meadowhall,Flood,3,36000,18,14,90
+Attercliffe,Industrial accident,4,22000,16,12,70
+Hillsborough,Generic incident,2,15000,10,8,45
+Darnall,Flood,2,18000,11,9,50
