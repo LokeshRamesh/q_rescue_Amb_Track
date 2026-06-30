@@ -1,0 +1,536 @@
+{
+  "saved_at": "2026-06-30T18:46:51",
+  "results": {
+    "disaster_type": "Generic incident",
+    "disaster_note": "",
+    "location": "Sheffield City Centre",
+    "location_note": "",
+    "severity": 3,
+    "affected_population": 25000,
+    "available_ambulances": 7,
+    "available_rescue_teams": 6,
+    "available_food_units": 42,
+    "domain_payload": {
+      "incident": {
+        "id": "frontend-demo-incident",
+        "location": {
+          "x": 53.3811,
+          "y": -1.4701
+        },
+        "severity": "HIGH",
+        "severity_value": 3,
+        "category": "generic"
+      },
+      "ui_context": {
+        "affected_population": 25000,
+        "available_ambulances": 7,
+        "available_rescue_teams": 6,
+        "available_food_units": 42
+      }
+    },
+    "allocation_result": {
+      "source": "ui_request",
+      "request": {
+        "scenario": {
+          "category": "generic",
+          "location": [
+            53.3811,
+            -1.4701
+          ],
+          "location_name": "Sheffield City Centre",
+          "ambulances": 7,
+          "incidents": 14,
+          "seed": 42
+        },
+        "optimisation": {
+          "critical_priority": true,
+          "run_exact": false,
+          "run_qaoa": false
+        }
+      },
+      "scenario": {
+        "name": "Generic Scenario (seed=42)",
+        "category": "generic",
+        "counts": {
+          "ambulances": 7,
+          "incidents": 14,
+          "hospitals": 4
+        },
+        "ambulances": [
+          {
+            "id": "A1",
+            "lat": 53.395914,
+            "lon": -1.544998,
+            "status": "Available"
+          },
+          {
+            "id": "A2",
+            "lat": 53.341254,
+            "lon": -1.505358,
+            "status": "Available"
+          },
+          {
+            "id": "A3",
+            "lat": 53.410471,
+            "lon": -1.41466,
+            "status": "Available"
+          },
+          {
+            "id": "A4",
+            "lat": 53.433827,
+            "lon": -1.532612,
+            "status": "Available"
+          },
+          {
+            "id": "A5",
+            "lat": 53.363288,
+            "lon": -1.544041,
+            "status": "Available"
+          },
+          {
+            "id": "A6",
+            "lat": 53.332796,
+            "lon": -1.448929,
+            "status": "Available"
+          },
+          {
+            "id": "A7",
+            "lat": 53.30398,
+            "lon": -1.510232,
+            "status": "Available"
+          }
+        ],
+        "incidents": [
+          {
+            "id": "I1",
+            "lat": 53.397483,
+            "lon": -1.441012,
+            "severity_level": "MEDIUM",
+            "severity_weight": 50,
+            "category": "generic"
+          },
+          {
+            "id": "I2",
+            "lat": 53.367381,
+            "lon": -1.494362,
+            "severity_level": "LOW",
+            "severity_weight": 25,
+            "category": "generic"
+          },
+          {
+            "id": "I3",
+            "lat": 53.413821,
+            "lon": -1.518068,
+            "severity_level": "CRITICAL",
+            "severity_weight": 100,
+            "category": "generic"
+          },
+          {
+            "id": "I4",
+            "lat": 53.351038,
+            "lon": -1.518904,
+            "severity_level": "HIGH",
+            "severity_weight": 75,
+            "category": "generic"
+          },
+          {
+            "id": "I5",
+            "lat": 53.315332,
+            "lon": -1.474015,
+            "severity_level": "HIGH",
+            "severity_weight": 75,
+            "category": "generic"
+          },
+          {
+            "id": "I6",
+            "lat": 53.427124,
+            "lon": -1.429255,
+            "severity_level": "LOW",
+            "severity_weight": 25,
+            "category": "generic"
+          },
+          {
+            "id": "I7",
+            "lat": 53.40946,
+            "lon": -1.442754,
+            "severity_level": "CRITICAL",
+            "severity_weight": 100,
+            "category": "generic"
+          },
+          {
+            "id": "I8",
+            "lat": 53.31182,
+            "lon": -1.491364,
+            "severity_level": "HIGH",
+            "severity_weight": 75,
+            "category": "generic"
+          },
+          {
+            "id": "I9",
+            "lat": 53.386603,
+            "lon": -1.409086,
+            "severity_level": "LOW",
+            "severity_weight": 25,
+            "category": "generic"
+          },
+          {
+            "id": "I10",
+            "lat": 53.399189,
+            "lon": -1.395386,
+            "severity_level": "LOW",
+            "severity_weight": 25,
+            "category": "generic"
+          },
+          {
+            "id": "I11",
+            "lat": 53.428298,
+            "lon": -1.376703,
+            "severity_level": "CRITICAL",
+            "severity_weight": 100,
+            "category": "generic"
+          },
+          {
+            "id": "I12",
+            "lat": 53.341696,
+            "lon": -1.422863,
+            "severity_level": "HIGH",
+            "severity_weight": 75,
+            "category": "generic"
+          },
+          {
+            "id": "I13",
+            "lat": 53.324398,
+            "lon": -1.478946,
+            "severity_level": "HIGH",
+            "severity_weight": 75,
+            "category": "generic"
+          },
+          {
+            "id": "I14",
+            "lat": 53.405273,
+            "lon": -1.41329,
+            "severity_level": "LOW",
+            "severity_weight": 25,
+            "category": "generic"
+          }
+        ],
+        "hospitals": [
+          {
+            "id": "H1",
+            "name": "Northern General Hospital",
+            "lat": 53.4096,
+            "lon": -1.4565,
+            "capacity": 1100,
+            "available_beds": 850
+          },
+          {
+            "id": "H2",
+            "name": "Royal Hallamshire Hospital",
+            "lat": 53.3782,
+            "lon": -1.4883,
+            "capacity": 900,
+            "available_beds": 680
+          },
+          {
+            "id": "H3",
+            "name": "Sheffield Children's Hospital",
+            "lat": 53.3728,
+            "lon": -1.4908,
+            "capacity": 200,
+            "available_beds": 150
+          },
+          {
+            "id": "H4",
+            "name": "Weston Park Hospital",
+            "lat": 53.3778,
+            "lon": -1.4943,
+            "capacity": 72,
+            "available_beds": 55
+          }
+        ]
+      },
+      "inputs": {
+        "distance_matrix": {
+          "A1": {
+            "I1": 6.896729,
+            "I2": 4.620094,
+            "I3": 2.674244,
+            "I4": 5.281747,
+            "I5": 10.123273,
+            "I6": 8.419827,
+            "I7": 6.943365,
+            "I8": 10.005433,
+            "I9": 9.071723,
+            "I10": 9.926075,
+            "I11": 11.721108,
+            "I12": 10.09983,
+            "I13": 9.080179,
+            "I14": 8.793502
+          },
+          "A2": {
+            "I1": 7.570727,
+            "I2": 2.995445,
+            "I3": 8.112976,
+            "I4": 1.411376,
+            "I5": 3.555458,
+            "I6": 10.800223,
+            "I7": 8.646646,
+            "I8": 3.402334,
+            "I9": 8.138384,
+            "I10": 9.732968,
+            "I11": 12.902783,
+            "I12": 5.476908,
+            "I13": 2.566895,
+            "I14": 9.379606
+          },
+          "A3": {
+            "I1": 2.266558,
+            "I2": 7.133855,
+            "I3": 6.863822,
+            "I4": 9.564551,
+            "I5": 11.288334,
+            "I6": 2.089137,
+            "I7": 1.865525,
+            "I8": 12.092812,
+            "I9": 2.679595,
+            "I10": 1.790514,
+            "I11": 3.202507,
+            "I12": 7.666726,
+            "I13": 10.478214,
+            "I14": 0.585038
+          },
+          "A4": {
+            "I1": 7.292773,
+            "I2": 7.811478,
+            "I3": 2.424317,
+            "I4": 9.250523,
+            "I5": 13.737518,
+            "I6": 6.887841,
+            "I7": 6.541789,
+            "I8": 13.839759,
+            "I9": 9.726714,
+            "I10": 9.876124,
+            "I11": 10.347059,
+            "I12": 12.566659,
+            "I13": 12.677925,
+            "I14": 8.520712
+          },
+          "A5": {
+            "I1": 7.820236,
+            "I2": 3.327513,
+            "I3": 5.877042,
+            "I4": 2.153687,
+            "I5": 7.074644,
+            "I6": 10.407185,
+            "I7": 8.454481,
+            "I8": 6.707061,
+            "I9": 9.320207,
+            "I10": 10.637198,
+            "I11": 13.242172,
+            "I12": 8.393413,
+            "I13": 6.113416,
+            "I14": 9.848392
+          },
+          "A6": {
+            "I1": 7.21202,
+            "I2": 4.887092,
+            "I3": 10.109901,
+            "I4": 5.06902,
+            "I5": 2.558684,
+            "I6": 10.569711,
+            "I7": 8.534492,
+            "I8": 3.658397,
+            "I9": 6.541252,
+            "I10": 8.192939,
+            "I11": 11.649874,
+            "I12": 1.993631,
+            "I13": 2.201242,
+            "I14": 8.398805
+          },
+          "A7": {
+            "I1": 11.366887,
+            "I2": 7.128185,
+            "I3": 12.224793,
+            "I4": 5.264115,
+            "I5": 2.71719,
+            "I6": 14.70937,
+            "I7": 12.554597,
+            "I8": 1.526907,
+            "I9": 11.379246,
+            "I10": 13.045465,
+            "I11": 16.418921,
+            "I12": 7.159665,
+            "I13": 3.078019,
+            "I14": 12.971293
+          }
+        },
+        "severity_weights": {
+          "I1": 50,
+          "I2": 25,
+          "I3": 100,
+          "I4": 75,
+          "I5": 75,
+          "I6": 25,
+          "I7": 100,
+          "I8": 75,
+          "I9": 25,
+          "I10": 25,
+          "I11": 100,
+          "I12": 75,
+          "I13": 75,
+          "I14": 25
+        }
+      },
+      "optimization": {
+        "binary_variables": 98,
+        "settings": {
+          "distance_weight": 1.0,
+          "severity_weight": 8.0,
+          "constraint_penalty": 100.0,
+          "critical_priority": true,
+          "run_exact": false,
+          "run_qaoa": false,
+          "exact_variable_limit": 24,
+          "qaoa_variable_limit": 24,
+          "qaoa_reps": 1,
+          "qaoa_shots": 1024,
+          "qaoa_maxiter": 100,
+          "qaoa_attempts": 4,
+          "seed": 42
+        },
+        "gaps_from_exact": {
+          "classical_greedy": null,
+          "classical_optimal_flow": null,
+          "qaoa": null,
+          "classical_greedy_percent": null,
+          "classical_optimal_flow_percent": null,
+          "qaoa_percent": null
+        }
+      },
+      "solvers": {
+        "classical-greedy": {
+          "status": "ok",
+          "solver_name": "classical-greedy",
+          "qubo_energy": -11.124826999999641,
+          "runtime_seconds": 0.00012650014832615852,
+          "feasible": true,
+          "metrics": {
+            "average_distance_km": 5.267881857142858,
+            "coverage_percent": 50.0,
+            "critical_coverage_percent": 100.0
+          },
+          "assignments": [
+            {
+              "ambulance_id": "A1",
+              "incident_id": "I12",
+              "distance_km": 10.09983,
+              "hospital_id": null
+            },
+            {
+              "ambulance_id": "A2",
+              "incident_id": "I4",
+              "distance_km": 1.411376,
+              "hospital_id": null
+            },
+            {
+              "ambulance_id": "A3",
+              "incident_id": "I7",
+              "distance_km": 1.865525,
+              "hospital_id": null
+            },
+            {
+              "ambulance_id": "A4",
+              "incident_id": "I3",
+              "distance_km": 2.424317,
+              "hospital_id": null
+            },
+            {
+              "ambulance_id": "A5",
+              "incident_id": "I8",
+              "distance_km": 6.707061,
+              "hospital_id": null
+            },
+            {
+              "ambulance_id": "A6",
+              "incident_id": "I11",
+              "distance_km": 11.649874,
+              "hospital_id": null
+            },
+            {
+              "ambulance_id": "A7",
+              "incident_id": "I5",
+              "distance_km": 2.71719,
+              "hospital_id": null
+            }
+          ]
+        },
+        "classical-optimal-flow": {
+          "status": "ok",
+          "solver_name": "classical-optimal-flow",
+          "qubo_energy": -27.34034000000065,
+          "runtime_seconds": 0.002794200088828802,
+          "feasible": true,
+          "metrics": {
+            "average_distance_km": 2.95138,
+            "coverage_percent": 50.0,
+            "critical_coverage_percent": 100.0
+          },
+          "assignments": [
+            {
+              "ambulance_id": "A1",
+              "incident_id": "I3",
+              "distance_km": 2.674244,
+              "hospital_id": null
+            },
+            {
+              "ambulance_id": "A2",
+              "incident_id": "I13",
+              "distance_km": 2.566895,
+              "hospital_id": null
+            },
+            {
+              "ambulance_id": "A3",
+              "incident_id": "I11",
+              "distance_km": 3.202507,
+              "hospital_id": null
+            },
+            {
+              "ambulance_id": "A4",
+              "incident_id": "I7",
+              "distance_km": 6.541789,
+              "hospital_id": null
+            },
+            {
+              "ambulance_id": "A5",
+              "incident_id": "I4",
+              "distance_km": 2.153687,
+              "hospital_id": null
+            },
+            {
+              "ambulance_id": "A6",
+              "incident_id": "I12",
+              "distance_km": 1.993631,
+              "hospital_id": null
+            },
+            {
+              "ambulance_id": "A7",
+              "incident_id": "I8",
+              "distance_km": 1.526907,
+              "hospital_id": null
+            }
+          ]
+        },
+        "exact-enumeration": {
+          "status": "skipped",
+          "solver_name": "exact-enumeration",
+          "reason": "exact enumeration disabled for this run"
+        },
+        "qiskit-qaoa": {
+          "status": "skipped",
+          "solver_name": "qiskit-qaoa",
+          "reason": "QAOA disabled for this run"
+        }
+      }
+    }
+  }
+}
